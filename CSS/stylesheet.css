@@ -1,0 +1,9 @@
+.navBarIcon {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.navBarLink {
+    position: relative;
+    left: -30%;
+}
