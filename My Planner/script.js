@@ -1,14 +1,14 @@
 let myPlanner = JSON.parse(Planner);
 
-console.log(myPlanner);
+console.table(myPlanner);
 
 for (let task of myPlanner) {
 
-  document.getElementById("taskHere").innerHTML = `
+  document.getElementById("taskHere").innerHTML += `
   
   <div class="mydivclass">
   <p>${myPlanner.taskName}</p>
-  <div><img src="IMG/${myPlanner.image} width="100%"</div
+  <div><img src="MyPlanner/IMG/${myPlanner.image} width="100%"</div
   <p>${myPlanner.description}</p>
   <p>${myPlanner.importance}</p>
   </div>
