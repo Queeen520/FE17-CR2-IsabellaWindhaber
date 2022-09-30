@@ -1,95 +1,92 @@
-let Planner `
+const Planner = `[{
 
-[{
+  "taskName": "shopping", 
 
-    "taskName": "shopping", 
+  "image": "img/groceries.jpg", 
 
-    "image": "img/groceries.jpg", 
+  "description": "Shop for weekly groceries at Billa and Hofer.", 
 
-    "description": "Shop for weekly groceries at Billa and Hofer.", 
+  "importance": 0
+},
+{
+  "taskName": "Learning", 
 
-    "importance": 0    
+  "image": "img/groceries.jpg", 
 
-  },
-  {
-    "taskName": "Learning", 
+  "description": "Daily learning for CodeFactory & code everyday.", 
 
-    "image": "img/groceries.jpg", 
+  "importance": 9
+},
+{
+  "taskName": "Time For Selfcare", 
 
-    "description": "Daily learning for CodeFactory & code everyday.", 
+  "image": "img/groceries.jpg", 
 
-    "importance": 9
-  },
-  {
-    "taskName": "Time For Selfcare", 
+  "description": "1 hour a day just for you.", 
 
-    "image": "img/groceries.jpg", 
+  "importance": 8
+},
+{
+  "taskName": "Reading", 
 
-    "description": "1 hour a day just for you.", 
+  "image": "img/groceries.jpg", 
 
-    "importance": 8
-  },
-  {
-    "taskName": "Reading", 
+  "description": "Read everyday.", 
 
-    "image": "img/groceries.jpg", 
+  "importance": 6
+},
+{
+  "taskName": "Phonecall", 
 
-    "description": "Read everyday.", 
+  "image": "img/groceries.jpg", 
 
-    "importance": 6
-  },
-  {
-    "taskName": "Phonecall", 
+  "description": "Call your mom at least one a week.", 
 
-    "image": "img/groceries.jpg", 
+  "importance": 7
+},
+{
+  "taskName": "Drink More Water", 
 
-    "description": "Call your mom at least one a week.", 
+  "image": "img/groceries.jpg", 
 
-    "importance": 7
-  },
-  {
-    "taskName": "Drink More Water", 
+  "description": "Water is good for your brain & body.", 
 
-    "image": "img/groceries.jpg", 
+  "importance": 5
+},
+{
+  "taskName": "Wat Well", 
 
-    "description": "Water is good for your brain & body.", 
+  "image": "img/groceries.jpg", 
 
-    "importance": 5
-  },
-  {
-    "taskName": "Wat Well", 
+  "description": "Eat a warm meal.", 
 
-    "image": "img/groceries.jpg", 
+  "importance": 4
+},
+{
+  "taskName": "Get fresh air", 
 
-    "description": "Eat a warm meal.", 
+  "image": "img/groceries.jpg", 
 
-    "importance": 4
-  },
-  {
-    "taskName": "Get fresh air", 
+  "description": "go for a walk.", 
 
-    "image": "img/groceries.jpg", 
+  "importance": 3
+},
+{
+  "taskName": "Do Clothes", 
 
-    "description": "go for a walk.", 
+  "image": "img/groceries.jpg", 
 
-    "importance": 3
-  },
-  {
-    "taskName": "Do Clothes", 
+  "description": "Wash and iron clothes.", 
 
-    "image": "img/groceries.jpg", 
+  "importance": 2
+},
+{
+  "taskName": "Clean The Flat", 
 
-    "description": "Wash and iron clothes.", 
+  "image": "img/groceries.jpg", 
 
-    "importance": 2
-  },
-  {
-    "taskName": "Clean The Flat", 
+  "description": "At least once a week, do some cleaning at home.", 
 
-    "image": "img/groceries.jpg", 
-
-    "description": "At least once a week, do some cleaning at home.", 
-
-    "importance": 1
-  }
-] `
+  "importance": 1
+}
+]`

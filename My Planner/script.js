@@ -1,3 +1,3 @@
-let myPlanner = JSON.parse(PLanner);
+let myPlanner = JSON.parse(Planner);
 
-console.log(typeof myPLanner);
+console.log(myPlanner);
