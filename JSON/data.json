@@ -1,4 +1,6 @@
-let myPlanner [{
+let Planner `
+
+[{
 
     "taskName": "shopping", 
 
@@ -90,4 +92,4 @@ let myPlanner [{
 
     "importance": 1
   }
-]
+] `
