@@ -14,9 +14,8 @@
     position: relative;
 }
 
-.header img {
-    width: auto;
-    height: auto;
+.headerpic {
+    position: relative;
 }
 
 .headline {
@@ -27,3 +26,6 @@
 
 }
 
+.mydivclass {
+    border: 1px solid black;
+}
