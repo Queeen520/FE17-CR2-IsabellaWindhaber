@@ -2,7 +2,21 @@ let myPlanner = JSON.parse(Planner);
 
 console.log(myPlanner);
 
+for (let task of myPlanner) {
 
+  document.getElementById("taskHere").innerHTML = `
+  
+  <div class="mydivclass">
+  <p>${myPlanner.taskName}</p>
+  <div><img src="IMG/${myPlanner.image} width="100%"</div
+  <p>${myPlanner.description}</p>
+  <p>${myPlanner.importance}</p>
+  </div>
+  `;
+}
+
+
+/* 
 
 function addTask() {
     return `
@@ -17,10 +31,5 @@ function addTask() {
 
 console.log(addTask());
 
-
-
-/*
-for (let task in myPlanner) {
-  document.getElementById("taskHere").innerHTML = task.addTask();
-}
 */
+

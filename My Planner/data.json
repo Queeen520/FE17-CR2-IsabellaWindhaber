@@ -2,7 +2,7 @@ const Planner = `[{
 
   "taskName": "Shopping", 
 
-  "image": "img/groceries.jpg", 
+  "image": "weeklyshopping.png", 
 
   "description": "Shop for weekly groceries at Billa and Hofer.", 
 
@@ -11,7 +11,7 @@ const Planner = `[{
 {
   "taskName": "Learning", 
 
-  "image": "img/groceries.jpg", 
+  "image": "studie.png", 
 
   "description": "Daily learning for CodeFactory & code everyday.", 
 
@@ -20,7 +20,7 @@ const Planner = `[{
 {
   "taskName": "Time For Selfcare", 
 
-  "image": "img/groceries.jpg", 
+  "image": "selfcare.png", 
 
   "description": "1 hour a day just for you.", 
 
@@ -29,7 +29,7 @@ const Planner = `[{
 {
   "taskName": "Reading", 
 
-  "image": "img/groceries.jpg", 
+  "image": "books.png", 
 
   "description": "Read everyday.", 
 
@@ -38,7 +38,7 @@ const Planner = `[{
 {
   "taskName": "Phonecall", 
 
-  "image": "img/groceries.jpg", 
+  "image": "phonecall.png", 
 
   "description": "Call your mom at least one a week.", 
 
@@ -47,16 +47,16 @@ const Planner = `[{
 {
   "taskName": "Drink More Water", 
 
-  "image": "img/groceries.jpg", 
+  "image": "drinkwater.png", 
 
   "description": "Water is good for your brain & body.", 
 
   "importance": 5
 },
 {
-  "taskName": "Wat Well", 
+  "taskName": "Eat Well", 
 
-  "image": "img/groceries.jpg", 
+  "image": "meal.png", 
 
   "description": "Eat a warm meal.", 
 
@@ -65,7 +65,7 @@ const Planner = `[{
 {
   "taskName": "Get fresh air", 
 
-  "image": "img/groceries.jpg", 
+  "image": "walk.png", 
 
   "description": "go for a walk.", 
 
@@ -74,7 +74,7 @@ const Planner = `[{
 {
   "taskName": "Do Clothes", 
 
-  "image": "img/groceries.jpg", 
+  "image": "clothes.png", 
 
   "description": "Wash and iron clothes.", 
 
@@ -83,10 +83,10 @@ const Planner = `[{
 {
   "taskName": "Clean The Flat", 
 
-  "image": "img/groceries.jpg", 
+  "image": "cleaning.png", 
 
   "description": "At least once a week, do some cleaning at home.", 
 
   "importance": 1
 }
-]`
+]`;
