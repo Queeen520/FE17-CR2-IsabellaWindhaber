@@ -1,0 +1,93 @@
+let myPlanner [{
+
+    "taskName": "shopping", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "Shop for weekly groceries at Billa and Hofer.", 
+
+    "importance": 0    
+
+  },
+  {
+    "taskName": "Learning", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "Daily learning for CodeFactory & code everyday.", 
+
+    "importance": 9
+  },
+  {
+    "taskName": "Time For Selfcare", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "1 hour a day just for you.", 
+
+    "importance": 8
+  },
+  {
+    "taskName": "Reading", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "Read everyday.", 
+
+    "importance": 6
+  },
+  {
+    "taskName": "Phonecall", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "Call your mom at least one a week.", 
+
+    "importance": 7
+  },
+  {
+    "taskName": "Drink More Water", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "Water is good for your brain & body.", 
+
+    "importance": 5
+  },
+  {
+    "taskName": "Wat Well", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "Eat a warm meal.", 
+
+    "importance": 4
+  },
+  {
+    "taskName": "Get fresh air", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "go for a walk.", 
+
+    "importance": 3
+  },
+  {
+    "taskName": "Do Clothes", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "Wash and iron clothes.", 
+
+    "importance": 2
+  },
+  {
+    "taskName": "Clean The Flat", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "At least once a week, do some cleaning at home.", 
+
+    "importance": 1
+  }
+]
