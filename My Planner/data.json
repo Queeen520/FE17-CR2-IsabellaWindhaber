@@ -1,92 +1,41 @@
 const Planner = `[{
-
-  "taskName": "Shopping", 
-
-  "image": "weeklyshopping.png", 
-
-  "description": "Shop for weekly groceries at Billa and Hofer.", 
-
-  "importance": 0
-},
-{
-  "taskName": "Learning", 
-
-  "image": "studie.png", 
-
-  "description": "Daily learning for CodeFactory & code everyday.", 
-
-  "importance": 9
-},
-{
-  "taskName": "Time For Selfcare", 
-
-  "image": "selfcare.png", 
-
-  "description": "1 hour a day just for you.", 
-
-  "importance": 8
-},
-{
-  "taskName": "Reading", 
-
-  "image": "books.png", 
-
-  "description": "Read everyday.", 
-
-  "importance": 6
-},
-{
-  "taskName": "Phonecall", 
-
-  "image": "phonecall.png", 
-
-  "description": "Call your mom at least one a week.", 
-
-  "importance": 7
-},
-{
-  "taskName": "Drink More Water", 
-
-  "image": "drinkwater.png", 
-
-  "description": "Water is good for your brain & body.", 
-
-  "importance": 5
-},
-{
-  "taskName": "Eat Well", 
-
-  "image": "meal.png", 
-
-  "description": "Eat a warm meal.", 
-
-  "importance": 4
-},
-{
-  "taskName": "Get fresh air", 
-
-  "image": "walk.png", 
-
-  "description": "go for a walk.", 
-
-  "importance": 3
-},
-{
-  "taskName": "Do Clothes", 
-
-  "image": "clothes.png", 
-
-  "description": "Wash and iron clothes.", 
-
-  "importance": 2
-},
-{
-  "taskName": "Clean The Flat", 
-
-  "image": "cleaning.png", 
-
-  "description": "At least once a week, do some cleaning at home.", 
-
-  "importance": 1
-}
-]`;
+"taskName": "Shopping",
+"image": "weeklyshopping.png",
+"description": "Shop for weekly groceries. Don't forget fruits!",
+"importance": 0},
+{"taskName": "Learning",
+"image": "studie.png",
+"description": "Daily learning for CodeFactory & code everyday. Have fun while coding!",
+"importance": 9},
+{"taskName": "Time For Selfcare",
+"image": "selfcare.png",
+"description": "1 hour a day just for you. Take a bath, do your hair, anything else..",
+"importance": 8},
+{"taskName": "Reading",
+"image": "books.png",
+"description": "Read everyday. It's good for you!",
+"importance": 6},
+{"taskName": "Phonecall",
+"image": "phonecall.png",
+"description": "Call your mom at least one a week.",
+"importance": 7},
+{"taskName": "Drink More Water",
+"image": "drinkwater.png",
+"description": "Water is good for your brain & body.",
+"importance": 5},
+{"taskName": "Eat Well",
+"image": "meal.png",
+"description": "Eat a warm meal. If there's no time during the Week, do it on the Weekend!",
+"importance": 4},
+{"taskName": "Get fresh air",
+"image": "walk.png",
+"description": "Go for a walk for 30 Minutes.",
+"importance": 3},
+{"taskName": "Do Clothes",
+"image": "clothes.png",
+"description": "Wash and iron clothes.",
+"importance": 2},
+{"taskName": "Clean The Flat",
+"image": "cleaning.png",
+"description": "At least once a week, do some cleaning at home.",
+"importance": 1}]`;
