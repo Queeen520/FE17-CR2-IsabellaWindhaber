@@ -31,14 +31,15 @@
     position: absolute;
     top: 5cm;
     left: 40%;
-    font-size: 1cm;
+    font-size: 1.5cm;
     font-family: tahoma bold;
+    letter-spacing: 3px;
 }
 
 .btn-sort {
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .container1 {
@@ -65,40 +66,89 @@
         width: 100%;
         border: 1px solid;
         border-radius: 20px;
+        margin: 2%;
+        padding: 2%;
     }
 
     #taskhere1 {
         width: 33%;
-        border: 1px solid;
         border-radius: 20px;
-        padding: 1%;
+        padding: 3%;
     }
     
     #taskhere2 {
         width: 33%;
-        border: 1px solid;
         border-radius: 20px;
-        padding: 1%;
+        padding: 3%;
     }
     
     #taskhere3 {
         width: 33%;
-        border: 1px solid;
         border-radius: 20px;
+        padding: 3%;
+    }
+
+    .img {
+        display: flex;
         padding: 1%;
+        margin: 1%;
+    }
+
+    .card-body h5 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .card-title-style {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: tahoma;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        letter-spacing: 2px;
+    }
+
+    .card-title-style button {
+        display: flex;
+        margin-left: 5%;
+        margin-top: 2%;
+        width: fit-content;
+        height: fit-content;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
 
     .card-text-style {
+        display: flex;
+        margin: 2%;
         font-family: calibri;
-        font-size: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        font-size: 25px;
     }
+
+    .iconspan {
+        display: flex;
+        padding-top: 2%;
+        padding-right: 5%;
+    }
+
 
     .prior {
         background-color: lightgray;
         border: 0px;
         font-size: 15px;
+        margin: 2%;
+        letter-spacing: 2px;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 3%;
+        padding: 2%;
     }
 
     .footerIcons, .footerSubscribe, .footerCopieright {
@@ -115,18 +165,17 @@
     }
 
     .footerSubscribe label {
-        margin-left: 10%;
-        width: 30%;
+        margin-left: 9%;
+        width: 20%;
     }
 
     .footerSubscribe input {
-        margin-right: 2%;
-        width: 60%;
+        width: 70%;
     }
 
     .footerSubscribe button {
         width: 10%;
-        margin-left: 1%;
+        margin-left: 3%;
         margin-right: 15%;
     }
 
