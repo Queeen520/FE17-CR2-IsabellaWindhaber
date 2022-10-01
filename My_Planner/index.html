@@ -53,12 +53,12 @@
 
     <!-- Section with sorting button -->
     <div class="container1">
-      <h3>Weekly Tasks Overview</h3> <h3>Sorting by <button type="button" id="btn-sort" class="btn-sort btn btn-warning">priority: <i class="bi bi-sort-up"></i></button></h3>
+      <h3>Weekly Tasks Overview</h3> <h3>Sorting by <button onclick="sortByImportanceValue()" type="button" id="btn-sort" class="btn-sort btn btn-warning">priority: <i class="bi bi-sort-up"></i></button></h3>
     </div>
 
 
     <!-- Section where the tasks will be printet -->
-  <div class="gridBox">
+  <div class="gridBox .row-to-col">
       <div class=".col-6 .col-md-4 .col-sm- .col-md- .col-xl-" id="taskhere1">
       
       </div>
@@ -81,7 +81,7 @@
     <i class="bi bi-envelope-fill"></i>
   </div>
   <div class="footerSubscribe">
-      <label for="InputEmail1" class="form-label">Subscribe for our Newsletter</label>
+      <label for="InputEmail1" class="form-label">Subscribe for our <br> Newsletter</label>
        <input type="email" class="form-control" id="exampleInputEmail1">
       <button type="submit" class="btn btn-secondary">Submit</button>
   </div>

@@ -75,16 +75,37 @@ else {
 }
 
 
-document.getElementsByClassName("btn")[0].addEventListener = function () {
-  myPlanner[0].importance++;
-  document.getElementsByClassName("btn-importance")[0].innerHTML = myPlanner[0].importance;
+document.getElementById("btn-sort").onclick = sortByImportanceValue;
+
+function sortByImportanceValue() {
+  myPlanner.sort();
+  console.table(myPlanner);
+};
+
+
+
+/*
+document.getElementById("btn-sort").addEventListener = function () {
+  myPlanner[task].importance++;
+  document.getElementsByClassName("prior")[0].innerHTML = myPlanner[tasks].importance;
 }
 
 
+function importanceAdd (index) {
+  myPlanner[index].importance++;
+
+  document.getElementsByClassName("prior")[0].innerHTML = myPlanner[index].importanceAdd;
+}
 
 
+let sortButton = document.getElementById("btn-sort");
 
-
+for(let i = 0; i < sortButton.length ; i++) {
+  sortButton.addEventListener("click", function () {
+    importanceAdd(i);
+  })
+}
+*/
 
 
 
