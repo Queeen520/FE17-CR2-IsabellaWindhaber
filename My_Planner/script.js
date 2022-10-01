@@ -1,22 +1,20 @@
-let myPlanner = JSON.parse(Planner);
+const myPlanner = JSON.parse(Planner);
 
 console.log(typeof myPlanner);
 console.table(myPlanner);
 
-var mytask = document.getElementById("taskhere");
 
+for (task in myPlanner) {
 
-for (task of myPlanner) {
-  console.log(task);
-  mytask.innerHTML += `
+  document.getElementById("taskhere").innerHTML += `
   <div class="col mydivclass">
-    <img src="/FE17-CR2-IsabellaWindhaber/My Planner/${myPlanner.image} class="card-img-top" width="100%" alt="task">
+    <img src="/My_Planner/IMG/$myPlanner[0].image} class="card-img-top" width="100%" alt="task">
     <div class="card-body">
-    <h5 class="card-title">${myPlanner.taskName}</h5>
-    <p class="card-text">${myPlanner.description}</p>
+    <h5 class="card-title">${myPlanner[task].taskName}</h5>
+    <p class="card-text">${myPlanner[task].description}</p>
     </div>
   <div class="card-footer">
-    <small class="text-muted">Priority Level: <button type="button" class="btn-importance btn btn-dark">${myPlanner.importance}</button></small>
+    <small class="text-muted">Priority Level: <button type="button" class="btn-importance btn btn-dark">${myPlanner[task].importance}</button></small>
   </div>
   <div>
     <button type="button" class="btn btn-success left-btn">green DONE</button>
@@ -25,6 +23,8 @@ for (task of myPlanner) {
   </div>
   `;
 }
+
+
 
 document.getElementsByClassName("btn")[0].addEventListener = function () {
   myPlanner[0].importance++;

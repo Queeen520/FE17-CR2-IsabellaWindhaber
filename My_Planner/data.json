@@ -1,4 +1,4 @@
-const Planner = `[{
+let Planner = `[{
 "taskName": "Shopping",
 "image": "weeklyshopping.png",
 "description": "Shop for weekly groceries. Don't forget the fruits and vegetables!",
