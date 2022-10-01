@@ -21,7 +21,7 @@ for (task in myPlanner) {
     <p class="card-text card-text-style">${myPlanner[task].description}</p>
     </div>
   <div class="card-footer">
-  <span class="prior"><p> Priority Level: ${myPlanner[task].importance} </p></span>
+  <span class="prior">Priority Level: <button type="button" class="btn btn-light">${myPlanner[task].importance}</button></span>
   <p> <i class="bi bi-calendar-date"> </i> Deadline: ${date}</p>
   </div>
   <div class="btn-box">
@@ -41,7 +41,7 @@ else if (task <= 5) {
     <p class="card-text card-text-style">${myPlanner[task].description}</p>
     </div>
   <div class="card-footer">
-  <span class="prior"><p> Priority Level: ${myPlanner[task].importance} </p></span>
+  <span class="prior">Priority Level: <button type="button" class="btn btn-light">${myPlanner[task].importance}</button></span>
   <p> <i class="bi bi-calendar-date"> </i> Deadline: ${date}</p>
   </div>
   <div class="btn-box">
@@ -62,7 +62,7 @@ else {
     <p class="card-text card-text-style">${myPlanner[task].description}</p>
     </div>
   <div class="card-footer">
-  <span class="prior"><p> Priority Level: ${myPlanner[task].importance} </p></span>
+  <span class="prior">Priority Level: <button type="button" class="btn btn-light">${myPlanner[task].importance}</button></span>
   <p> <i class="bi bi-calendar-date"> </i> Deadline: ${date}</p>
   </div>
   <div class="btn-box">
@@ -74,13 +74,35 @@ else {
 }
 }
 
+/*
 
+let myButton = document.getElementsByClassName("btn btn-light")[0];
+
+function changgeColor() {
+  document.getElementsByClassName("btn btn-light")[0].setAttribute("class");
+  
+  if (myPlanner[task].importance < 5) {
+    myButton.setAttribute("class", "btn btn-secondary");
+    else if (myPlanner[task].importance > 5) {
+      myButton.setAttribute("class", "btn btn-danger");
+    }
+    else {
+      myButton.setAttribute("class", "btn btn-warning")
+    }
+
+  }
+}
+
+*/
+
+/*
 document.getElementById("btn-sort").onclick = sortByImportanceValue;
 
 function sortByImportanceValue() {
   myPlanner.sort();
   console.table(myPlanner);
 };
+*/
 
 
 
