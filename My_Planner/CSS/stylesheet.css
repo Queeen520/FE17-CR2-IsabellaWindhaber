@@ -199,7 +199,7 @@
 
 /* middle size screens - tablet and co. */
 
-@media (min-width: 769px) { 
+@media (min-width: 769px, max-width: 995px) { 
 
     * {
         box-sizing: border-box;
@@ -208,6 +208,12 @@
     .navBarIcon {
         display: flex;
         flex-direction: column;
+        position: relative;
+    }
+    .container-style {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
      
     .mylinks {
@@ -272,7 +278,7 @@
         .task-card-body {
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 380px;
             border: 1px solid;
             border-radius: 20px;
             margin: 2%;
@@ -293,8 +299,10 @@
 
         #taskhere3 {
             display: flex;
-            flex-direction: row;
-            width: 50%
+            flex-direction: column;
+            width: 50%;
+            border-radius: 20px;
+            padding: 3%;
         }
         
     
@@ -374,17 +382,26 @@
             padding: 2%;
         }
     
+        .footerSubscribe {
+            display: flex;
+            align-items: center;
+        }
+
         .footerSubscribe label {
+            display: flex;
+            text-align: center;
             margin-left: 9%;
-            width: 20%;
+            width: 30%;
+            height: 10%;
         }
     
         .footerSubscribe input {
-            width: 70%;
+            width: 60%;
         }
     
         .footerSubscribe button {
             width: 10%;
+            height: fit-content;
             margin-left: 3%;
             margin-right: 15%;
         }
