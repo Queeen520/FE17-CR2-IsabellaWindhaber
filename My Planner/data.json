@@ -1,7 +1,7 @@
 const Planner = `[{
 "taskName": "Shopping",
 "image": "weeklyshopping.png",
-"description": "Shop for weekly groceries. Don't forget fruits!",
+"description": "Shop for weekly groceries. Don't forget the fruits and vegetables!",
 "importance": 0},
 {"taskName": "Learning",
 "image": "studie.png",
