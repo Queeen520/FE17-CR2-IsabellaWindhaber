@@ -1,29 +1,68 @@
-const myPlanner = JSON.parse(Planner);
+// parse from JSON file 
+const myPlanner = JSON.parse(Planner);        
 
-console.log(typeof myPlanner);
-console.table(myPlanner);
+// output objecgr
+console.log(typeof myPlanner);        
+console.table(myPlanner);      
 
 
-for (task in myPlanner) {
-
-  document.getElementById("taskhere").innerHTML += `
-  <div class="col mydivclass">
-    <img src="/My_Planner/IMG/$myPlanner[0].image} class="card-img-top" width="100%" alt="task">
-    <div class="card-body">
+// to have 3 columns in the HTML file i wrote it like this. i think its not the best way but anything else i tried didn't work ...
+for (task in myPlanner) {                   
+  if (task <= 2) {
+  document.getElementById("taskhere1").innerHTML += `
+  <div class="task-card-body">
+    <img src="FE17-CR2-IsabellaWindhaber/My_Planner/IMG/${myPlanner[0].image} class="card-img-top" width="100%" height="1.5cm" alt="task">
+    <div class="card-body text-center">
     <h5 class="card-title">${myPlanner[task].taskName}</h5>
-    <p class="card-text">${myPlanner[task].description}</p>
+    <p class="card-text card-text-style">${myPlanner[task].description}</p>
     </div>
   <div class="card-footer">
-    <small class="text-muted">Priority Level: <button type="button" class="btn-importance btn btn-dark">${myPlanner[task].importance}</button></small>
+  <span class="prior"><p> Priority Level: ${myPlanner[task].importance} </p></span>
   </div>
-  <div>
+  <div class="btn-box">
     <button type="button" class="btn btn-success left-btn">green DONE</button>
     <button type="button" class="btn btn-danger right-btn">red DELETE</button>
   </div>
   </div>
   `;
 }
-
+else if (task <= 5) {
+  document.getElementById("taskhere2").innerHTML += `
+  <div class="task-card-body">
+    <img src="FE17-CR2-IsabellaWindhaber/My_Planner/IMG/${myPlanner[0].image} class="card-img-top" width="100%" height="1.5cm" alt="task">
+    <div class="card-body text-center">
+    <h5 class="card-title">${myPlanner[task].taskName}</h5>
+    <p class="card-text card-text-style">${myPlanner[task].description}</p>
+    </div>
+  <div class="card-footer">
+  <span class="prior"><p> Priority Level: ${myPlanner[task].importance} </p></span>
+  </div>
+  <div class="btn-box">
+    <button type="button" class="btn btn-success left-btn">green DONE</button>
+    <button type="button" class="btn btn-danger right-btn">red DELETE</button>
+  </div>
+  </div>
+  `;
+}
+else {
+  document.getElementById("taskhere3").innerHTML += `
+  <div class="task-card-body">
+    <img src="FE17-CR2-IsabellaWindhaber/My_Planner/IMG/${myPlanner[0].image} class="card-img-top" width="100%" height="1.5cm" alt="task">
+    <div class="card-body text-center">
+    <h5 class="card-title">${myPlanner[task].taskName}</h5>
+    <p class="card-text card-text-style">${myPlanner[task].description}</p>
+    </div>
+  <div class="card-footer">
+  <span class="prior"><p> Priority Level: ${myPlanner[task].importance} </p></span>
+  </div>
+  <div class="btn-box">
+    <button type="button" class="btn btn-success left-btn">green DONE</button>
+    <button type="button" class="btn btn-danger right-btn">red DELETE</button>
+  </div>
+  </div>
+  `;
+}
+}
 
 
 document.getElementsByClassName("btn")[0].addEventListener = function () {
