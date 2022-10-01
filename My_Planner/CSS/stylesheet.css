@@ -198,7 +198,7 @@
 
 /* middle size screens - tablet and co. */
 
-@media (min-width: 769px, max-width: 995px) { 
+@media (max-width: 995px) and (min-width: 769px) { 
 
     * {
         box-sizing: border-box;
