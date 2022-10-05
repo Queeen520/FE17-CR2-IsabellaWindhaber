@@ -46,7 +46,6 @@ let myPlannerTask = document.querySelector(".card-group");
 
 /*
 let myButton = document.querySelectorAll(".btn");
-
     function changgeColor() {
   
       if (task.importance < 5) 
@@ -65,7 +64,6 @@ let myButton = document.querySelectorAll(".btn");
 
   /*
 document.getElementById("btn-sort").onclick = sortByImportanceValue;
-
 function sortByImportanceValue() {
   myPlanner.sort();
   console.table(myPlanner);
@@ -79,17 +77,11 @@ document.getElementById("btn-sort").addEventListener = function () {
   myPlanner[task].importance++;
   document.getElementsByClassName("prior")[0].innerHTML = myPlanner[tasks].importance;
 }
-
-
 function importanceAdd (index) {
   myPlanner[index].importance++;
-
   document.getElementsByClassName("prior")[0].innerHTML = myPlanner[index].importanceAdd;
 }
-
-
 let sortButton = document.getElementById("btn-sort");
-
 for(let i = 0; i < sortButton.length ; i++) {
   sortButton.addEventListener("click", function () {
     importanceAdd(i);
@@ -117,9 +109,7 @@ mytask.innerHTML += `
 */
 
 /* 
-
 function addTask() {
-
   document.getElementById("div1").innerHTML += `
   <div class="mydivclass">
   <img src="/MyPlanner/IMG/${myPlanner.image} class="card-img-top" width="100%" alt="task">
@@ -132,5 +122,4 @@ function addTask() {
   </div>
   `;
 }
-
 */
