@@ -42,6 +42,11 @@ let myPlannerTask = document.querySelector(".card-group");
     }
 };
 
+document.getElementById("btn-sort").onclick = sortByImportanceValue;
+
+function sortByImportanceValue() {
+  myPlanner.sort();
+};
 
 
 /*
