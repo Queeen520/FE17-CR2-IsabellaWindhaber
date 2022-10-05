@@ -8,6 +8,7 @@ console.table(myPlanner);
 const date = new Date();
 console.log(date);
 
+
    
 let myPlannerTask = document.querySelector(".card-group");
   
@@ -19,12 +20,31 @@ let myPlannerTask = document.querySelector(".card-group");
                 <h5 class="card-title">${task.taskName}</h5>
                 <p class="card-text">${task.description}</p>
                 <div class="card-footer">Oct. 2022</div>
-                <div class="card-footer"><button onclick="changgeColor()" type="button" class="btn btn-light">Importance Level ${task.importance}</button></div>
+                <div class="card-footer"><button onclick="changeColor()" type="button" class="btn btn-light">Importance Level ${task.importance}</button></div>
             </div>
         </div>
     `;
-
     let myButton = document.querySelectorAll(".btn btn-light");
+    
+    function changeColor() {
+  
+      if (task.importance < 5) 
+      myButton.setAttribute("class", "btn btn-secondary");
+    
+      else if (task.importance > 5) {
+      myButton.setAttribute("class", "btn btn-danger");
+      }
+    
+      else {
+      myButton.setAttribute("class", "btn btn-warning");
+      }
+    }
+};
+
+
+
+/*
+let myButton = document.querySelectorAll(".btn");
 
     function changgeColor() {
   
@@ -39,10 +59,10 @@ let myPlannerTask = document.querySelector(".card-group");
       myButton.setAttribute("class", "btn btn-warning");
       }
     };
-  }
+*/
 
 
-/*
+  /*
 document.getElementById("btn-sort").onclick = sortByImportanceValue;
 
 function sortByImportanceValue() {
