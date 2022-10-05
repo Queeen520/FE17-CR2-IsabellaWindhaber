@@ -210,7 +210,7 @@
 
 /* small screen - Smartphone */
 
-@media (max-width: 768px) { 
+@media (max-width: 769px) { 
     
     * {
         box-sizing: border-box;
