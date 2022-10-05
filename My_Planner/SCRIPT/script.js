@@ -13,37 +13,34 @@ let myPlannerTask = document.querySelector(".card-group");
   
   for (let task of myPlanner) {
     myPlannerTask.innerHTML += `
-    <div class="card">
+    <div class="card card-group">
         <img class="card-img-top mt-2 px-3" src="./IMG/${task.image}" alt="${task.taskName}">
             <div class="card-body px-3 py-0">
                 <h5 class="card-title">${task.taskName}</h5>
                 <p class="card-text">${task.description}</p>
-                <div class="card-footer"><button type="button" class="btn btn-light">${task.importance}</button></div>
+                <div class="card-footer">Oct. 2022</div>
+                <div class="card-footer"><button onclick="changgeColor()" type="button" class="btn btn-light">Importance Level ${task.importance}</button></div>
             </div>
         </div>
     `;
-  }
 
-/*
+    let myButton = document.querySelectorAll(".btn btn-light");
 
-let myButton = document.getElementsByClassName("btn btn-light")[0];
-
-function changgeColor() {
-  document.getElementsByClassName("btn btn-light")[0].setAttribute("class");
+    function changgeColor() {
   
-  if (myPlanner[task].importance < 5) {
-    myButton.setAttribute("class", "btn btn-secondary");
-    else if (myPlanner[task].importance > 5) {
+      if (task.importance < 5) 
+      myButton.setAttribute("class", "btn btn-secondary");
+    
+      else if (task.importance > 5) {
       myButton.setAttribute("class", "btn btn-danger");
-    }
-    else {
-      myButton.setAttribute("class", "btn btn-warning")
-    }
-
+      }
+    
+      else {
+      myButton.setAttribute("class", "btn btn-warning");
+      }
+    };
   }
-}
 
-*/
 
 /*
 document.getElementById("btn-sort").onclick = sortByImportanceValue;
