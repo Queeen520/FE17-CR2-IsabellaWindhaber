@@ -20,7 +20,9 @@ let myPlannerTask = document.querySelector(".card-group");
                 <h5 class="card-title">${task.taskName}</h5>
                 <p class="card-text">${task.description}</p>
                 <div class="card-footer">Oct. 2022</div>
-                <div class="card-footer"><button onclick="changeColor()" type="button" class="btn btn-light">Importance Level ${task.importance}</button></div>
+                <div class="card-footer text-start">
+                <button onclick="changeColor()" type="button" class="btn btn-light">
+                Importance Level ${task.importance}</button></div>
             </div>
         </div>
     `;
