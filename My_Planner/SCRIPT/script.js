@@ -14,7 +14,7 @@ let myPlannerTask = document.querySelector(".card-group");
   
   for (let task of myPlanner) {
     myPlannerTask.innerHTML += `
-    <div class="card card-group">
+    <div class="card">
         <img class="card-img-top mt-2 px-3" src="./IMG/${task.image}" alt="${task.taskName}">
             <div class="card-body px-3 py-0">
                 <h5 class="card-title">${task.taskName}</h5>
@@ -24,14 +24,15 @@ let myPlannerTask = document.querySelector(".card-group");
             </div>
         </div>
     `;
+
     let myButton = document.querySelectorAll(".btn btn-light");
     
     function changeColor() {
   
-      if (task.importance < 5) 
+      if (myPlanner[task].importance < 5) 
       myButton.setAttribute("class", "btn btn-secondary");
     
-      else if (task.importance > 5) {
+      else if (myPlanner[task].importance > 5) {
       myButton.setAttribute("class", "btn btn-danger");
       }
     
