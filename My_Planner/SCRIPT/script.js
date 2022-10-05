@@ -1,78 +1,28 @@
 // parse from JSON file 
 const myPlanner = JSON.parse(Planner);        
 
-// output objecgr
+// output object
 console.log(typeof myPlanner);        
 console.table(myPlanner);      
 
 const date = new Date();
 console.log(date);
 
-
-// to have 3 columns in the HTML file i wrote it like this. i think its not the best way but anything else i tried didn't work ...
-for (task in myPlanner) {                   
-  if (task <= 2) {
-  document.getElementById("taskhere1").innerHTML += `
-  <div class="task-card-body">
-  <div class="card-title card-title-style"> <button type="button" class="btn btn-info btn-task">Task</button> 
-  <span class="iconspan"><i class="bi bi-bookmark"></i> <i class="bi bi-three-dots-vertical"></i></span></div>    <img src="FE17-CR2-IsabellaWindhaber/My_Planner/IMG/${myPlanner[0].image} class="card-img-top" width="100%" height="1.5cm" alt="task">
-    <div class="card-body text-center">
-    <h5 class="card-title">${myPlanner[task].taskName}</h5>
-    <p class="card-text card-text-style">${myPlanner[task].description}</p>
-    </div>
-  <div class="card-footer">
-  <span class="prior">Priority Level: <button type="button" class="btn btn-light">${myPlanner[task].importance}</button></span>
-  <p> <i class="bi bi-calendar-date"> </i> Deadline: ${date}</p>
-  </div>
-  <div class="btn-box">
-    "<button type="button" id="left-btn" class="btn btn-success"><i class="bi bi-check-square"></i> </i> DONE</button>
-    <button type="button" class="btn btn-danger right-btn"><i class="bi bi-trash"> </i> DELETE</button>
-  </div>
-  </div>
-  `;
-}
-else if (task <= 5) {
-  document.getElementById("taskhere2").innerHTML += `
-  <div class="task-card-body">
-  <div class="card-title card-title-style"> <button type="button" class="btn btn-info btn-task">Task</button> 
-  <span class="iconspan"><i class="bi bi-bookmark"></i> <i class="bi bi-three-dots-vertical"></i></span></div>    <img src="FE17-CR2-IsabellaWindhaber/My_Planner/IMG/${myPlanner[0].image} class="card-img-top" width="100%" height="1.5cm" alt="task">
-    <div class="card-body text-center">
-    <h5 class="card-title">${myPlanner[task].taskName}</h5>
-    <p class="card-text card-text-style">${myPlanner[task].description}</p>
-    </div>
-  <div class="card-footer">
-  <span class="prior">Priority Level: <button type="button" class="btn btn-light">${myPlanner[task].importance}</button></span>
-  <p> <i class="bi bi-calendar-date"> </i> Deadline: ${date}</p>
-  </div>
-  <div class="btn-box">
-  <button type="button" id="left-btn" class="btn btn-success"><i class="bi bi-check-square"> </i> DONE</button>
-  <button type="button" class="btn btn-danger right-btn"><i class="bi bi-trash"> </i> DELETE</button>
-  </div>
-  </div>
-  `;
-}
-else {
-  document.getElementById("taskhere3").innerHTML += `
-  <div class="task-card-body">
-  <div class="card-title card-title-style"> <button type="button" class="btn btn-info btn-task">Task</button> 
-  <span class="iconspan"><i class="bi bi-bookmark"></i> <i class="bi bi-three-dots-vertical"></i></span></div>                      
-  <div class="img"><img src="FE17-CR2-IsabellaWindhaber/My_Planner/IMG/${myPlanner[0].image} class="card-img-top" width="100%" height="1.5cm" alt="task"></div> 
-    <div class="card-body text-center">
-    <h5 class="card-title">${myPlanner[task].taskName}</h5>
-    <p class="card-text card-text-style">${myPlanner[task].description}</p>
-    </div>
-  <div class="card-footer">
-  <span class="prior">Priority Level: <button type="button" class="btn btn-light">${myPlanner[task].importance}</button></span>
-  <p> <i class="bi bi-calendar-date"> </i> Deadline: ${date}</p>
-  </div>
-  <div class="btn-box">
-  <button type="button" id="left-btn" class="btn btn-success"><i class="bi bi-check-square"></i>> </i> DONE</button>
-  <button type="button" class="btn btn-danger right-btn"><i class="bi bi-trash"> </i> DELETE</button>
-  </div>
-  </div>
-  `;
-}
-}
+   
+let myPlannerTask = document.querySelector(".card-group");
+  
+  for (let task of myPlanner) {
+    myPlannerTask.innerHTML += `
+    <div class="card">
+        <img class="card-img-top mt-2 px-3" src="./IMG/${task.image}" alt="${task.taskName}">
+            <div class="card-body px-3 py-0">
+                <h5 class="card-title">${task.taskName}</h5>
+                <p class="card-text">${task.description}</p>
+                <div class="card-footer"><button type="button" class="btn btn-light">${task.importance}</button></div>
+            </div>
+        </div>
+    `;
+  }
 
 /*
 
