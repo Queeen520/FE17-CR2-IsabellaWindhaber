@@ -31,23 +31,22 @@ let myPlannerTask = document.querySelector(".card-group");
 
 
 let myButton = document.querySelectorAll(".myBtn");
-    myButton.forEach(changeColor);
 
     function changeColor() {
       
-      for (let i in myPlanner) {
+      for (let i in myButton) {
         return i;
       }
   
-      if (myPlanner[i] < 5) 
-      myButton.setAttribute("class", "btn btn-secondary");
+      if (myButton[i] < 5) 
+      myButton.setAttribute("class", "btn-secondary");
     
-      else if (myPlanner[i] > 5) {
-      myButton.setAttribute("class", "btn btn-danger");
+      else if (myButton[i] > 5) {
+      myButton.setAttribute("class", "btn-danger");
       }
     
       else {
-      myButton.setAttribute("class", "btn btn-warning");
+      myButton.setAttribute("class", "btn-warning");
       }
     };
 
