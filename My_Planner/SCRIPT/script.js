@@ -34,21 +34,21 @@ let myButton = document.querySelectorAll(".myBtn");
 
     function changeColor() {
       
-      for (let i in myButton) {
+      for (let i of myPlanner) {
         return i;
       }
   
-      if (myButton[i] < 5) 
+      if (myPlanner[i] < 5) 
       myButton.setAttribute("class", "btn-secondary");
     
-      else if (myButton[i] > 5) {
+      else if (myPlanner[i] > 5) {
       myButton.setAttribute("class", "btn-danger");
       }
     
       else {
       myButton.setAttribute("class", "btn-warning");
       }
-    };
+    }
 
 
 document.getElementById("btn-sort").onclick = sortByImportanceValue;
