@@ -7,42 +7,51 @@ console.table(myPlanner);
 
 const date = new Date();
 console.log(date);
-
-
    
 let myPlannerTask = document.querySelector(".card-group");
   
   for (let task of myPlanner) {
     myPlannerTask.innerHTML += `
+  <div class="col col-lg-2">
     <div class="card">
         <img class="card-img-top mt-2 px-3" src="./IMG/${task.image}" alt="${task.taskName}">
-            <div class="card-body px-3 py-0">
+            <div class="card-body myCard">
                 <h5 class="card-title">${task.taskName}</h5>
                 <p class="card-text">${task.description}</p>
                 <div class="card-footer">Oct. 2022</div>
                 <div class="card-footer text-start">
-                <button onclick="changeColor()" type="button" class="btn btn-light">
+                <button onclick="changeColor()" type="button" class="myBtn btn btn-light">
                 Importance Level ${task.importance}</button></div>
             </div>
         </div>
-    `;
+      </div>
 
-    let myButton = document.querySelectorAll(".btn btn-light");
+    `;
     
+};
+
+
+let myButton = document.querySelectorAll(".myBtn");
+    myButton.forEach(changeColor);
+
     function changeColor() {
+      
+      for (let i in myPlanner) {
+        return i;
+      }
   
-      if (myPlanner[task].importance < 5) 
+      if (myPlanner[i] < 5) 
       myButton.setAttribute("class", "btn btn-secondary");
     
-      else if (myPlanner[task].importance > 5) {
+      else if (myPlanner[i] > 5) {
       myButton.setAttribute("class", "btn btn-danger");
       }
     
       else {
       myButton.setAttribute("class", "btn btn-warning");
       }
-    }
-};
+    };
+
 
 document.getElementById("btn-sort").onclick = sortByImportanceValue;
 
