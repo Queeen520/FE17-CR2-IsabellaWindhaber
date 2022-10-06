@@ -54,8 +54,8 @@ let myButton = document.querySelectorAll(".myBtn");
 document.getElementById("btn-sort").onclick = sortByImportanceValue;
 
 function sortByImportanceValue() {
-  myPlanner.sort();
-};
+  myPlanner.sort((a,b) => myPlanner[a] - myPlanner[b]);
+}
 
 
 
