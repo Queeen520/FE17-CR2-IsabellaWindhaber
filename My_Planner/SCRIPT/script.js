@@ -39,14 +39,14 @@ let myButton = document.querySelectorAll(".myBtn");
       }
   
       if (myPlanner[i] < 5) 
-      myButton.setAttribute("class", "btn-secondary");
+      myButton.setAttribute("class", "btn btn-secondary");
     
       else if (myPlanner[i] > 5) {
-      myButton.setAttribute("class", "btn-danger");
+      myButton.setAttribute("class", "btn btn-danger");
       }
     
       else {
-      myButton.setAttribute("class", "btn-warning");
+      myButton.setAttribute("class", "btn btn-warning");
       }
     }
 
