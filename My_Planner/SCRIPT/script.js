@@ -13,7 +13,7 @@ let myPlannerTask = document.querySelector(".card-group");
   
   for (let task of myPlanner) {
   myPlannerTask.innerHTML += `
-  <div class="col col-lg-2">
+  <div class="col col-lg-3 col-md-2 col-sm-1">
     <div class="card">
         <img class="card-img-top mt-2 px-3" src="./IMG/${task.image}" alt="${task.taskName}">
             <div class="card-body myCard">
@@ -26,7 +26,6 @@ let myPlannerTask = document.querySelector(".card-group");
             </div>
         </div>
       </div>
-
     `;   
 };
 
