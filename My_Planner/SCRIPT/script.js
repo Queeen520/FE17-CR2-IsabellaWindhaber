@@ -8,10 +8,11 @@ console.table(myPlanner);
 const date = new Date();
 console.log(date);
    
+// prints cards with object properties
 let myPlannerTask = document.querySelector(".card-group");
   
   for (let task of myPlanner) {
-    myPlannerTask.innerHTML += `
+  myPlannerTask.innerHTML += `
   <div class="col col-lg-2">
     <div class="card">
         <img class="card-img-top mt-2 px-3" src="./IMG/${task.image}" alt="${task.taskName}">
@@ -26,8 +27,7 @@ let myPlannerTask = document.querySelector(".card-group");
         </div>
       </div>
 
-    `;
-    
+    `;   
 };
 
 
@@ -58,6 +58,7 @@ document.getElementById("btn-sort").onclick = sortByImportanceValue;
 function sortByImportanceValue() {
   myPlanner.sort();
 };
+
 
 
 /*
