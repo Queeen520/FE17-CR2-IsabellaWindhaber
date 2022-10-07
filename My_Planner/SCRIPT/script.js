@@ -49,6 +49,9 @@ let myButton = document.querySelectorAll(".myBtn");
       myButton.setAttribute("class", "class3");
       }
     }
+    
+
+    
 
 
 document.getElementById("btn-sort").onclick = sortByImportanceValue;
@@ -138,3 +141,6 @@ function addTask() {
   `;
 }
 */
+
+
+// change color of button javascript?
