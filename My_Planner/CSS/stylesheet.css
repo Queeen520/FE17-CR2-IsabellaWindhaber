@@ -1,5 +1,21 @@
 /* large screeen - Desktop, PC */
+:root {
+    --red: #ff4d4d;
+    --green: #70db70;
+    --yellow:  #ffdb4d;
+}
 
+.class1 {
+    color: var(--red);
+}
+
+.class2 {
+    color: var(--green);
+}
+
+.class3 {
+    color: var(--yellow);
+}
 
 @media (min-width: 992px) {
 
